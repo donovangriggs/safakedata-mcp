@@ -1,6 +1,6 @@
 {
   "name": "safakedata-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for SA Fake Data: realistic South African test data (people, ID numbers, bank accounts, addresses, companies) for Claude, Cursor and other AI tools",
   "license": "MIT",
   "author": "Donovan Griggs",
