@@ -1,0 +1,51 @@
+{
+  "name": "safakedata-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for SA Fake Data: realistic South African test data (people, ID numbers, bank accounts, addresses, companies) for Claude, Cursor and other AI tools",
+  "license": "MIT",
+  "author": "Donovan Griggs",
+  "homepage": "https://www.safakedata.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donovangriggs/safakedata-mcp.git"
+  },
+  "bugs": "https://github.com/donovangriggs/safakedata-mcp/issues",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "south-africa",
+    "fake-data",
+    "test-data",
+    "sa-id-number",
+    "claude"
+  ],
+  "type": "module",
+  "bin": {
+    "safakedata-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.10.1",
+    "eslint": "^10.0.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.48.0",
+    "vitest": "^4.0.14"
+  }
+}
