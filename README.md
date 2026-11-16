@@ -146,7 +146,7 @@ To try a local build in Claude Code: `claude mcp add safakedata-dev -e SAFAKEDAT
 
 ### Releases
 
-CI runs lint, typecheck, tests and build on every push and pull request, on Node 22, 24 and 26.
+CI runs lint, typecheck, tests and build on every push to `main` and every pull request, on Node 22, 24 and 26.
 
 Pushing a `v*` tag that matches the `package.json` version runs `.github/workflows/release.yml`, which publishes to npm with provenance. It needs an `NPM_TOKEN` repository secret holding an npm automation token with publish rights to `safakedata-mcp`.
 
